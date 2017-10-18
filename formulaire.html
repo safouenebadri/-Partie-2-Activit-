@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Formulaire d'inscription</title>
+</head>
+
+<body>
+
+    <form id="myForm">
+
+        <span class="form_col">Sexe :</span>
+        <label><input name="sex" type="radio" value="H" />Homme</label>
+        <label><input name="sex" type="radio" value="F" />Femme</label>
+        <span class="tooltip">Sélectionnez votre sexe</span>
+        <br /><br />
+
+        <label class="form_col" for="lastName">Nom :</label>
+        <input name="lastName" id="lastName" type="text" />
+        <span class="tooltip">Au moins 3 caractères</span>
+        <br /><br />
+
+        <label class="form_col" for="firstName">Prénom :</label>
+        <input name="firstName" id="firstName" type="text" />
+
+        <span class="tooltip">Au moins 3 caractères</span>
+        <br /><br />
+
+        <label class="form_col" for="age">Âge :</label>
+        <input name="age" id="age" type="text" />
+        
+        <br /><br />
+
+        <label class="form_col" for="login">Pseudo :</label>
+        <input name="login" id="login" type="text" />
+        <span class="tooltip">Au moins 3 caractères</span>
+        <br /><br />
+
+        <label class="form_col" for="pwd1">Mot de passe :</label>
+        <input name="pwd1" id="pwd1" type="password" />
+        <span class="tooltip">Au moins 6 caractères</span>
+
+        <br /><br />
+
+        <label class="form_col" for="pwd2">Confirmez mot de passe:</label>
+        <input name="pwd2" id="pwd2" type="password" />
+        <span class="tooltip">Le mot de passe de confirmation doit être identique</span>
+        <br /><br />
+
+        <label class="form_col" for="country">Pays :</label>
+
+        <select name="country" id="country">
+        	<option value="none">Sélectionnez votre pays</option>
+        	<option value="tn">Tunisie</option>
+        	<option value="ca">Canada</option>
+        	<option value="fr">France</option>
+    	</select>
+        <span class="tooltip">Sélectionner votre pays</span>
+
+        <br /><br />
+
+        <span class="form_col"></span>
+        <label><input name="news" type="checkbox" /> Je désire recevoir la newsletter chaque mois.</label>
+        <br /><br />
+
+        <span class="form_col"></span>
+        <input type="submit" value="M'inscrire" /> <input type="reset" value="Réinitialiser le formulaire" />
+
+    </form>
+
+</body>
+
+</html>
